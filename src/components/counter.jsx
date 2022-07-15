@@ -11,11 +11,18 @@ class Counter extends Component {
         return <ul>{this.state.tags.map(tag=><li key= {tag}>{tag}</li>)}</ul>;
 
     }
-    handleIncrement () {
-        console.log('====================================');
-        console.log("Increment Clicked");
-        console.log('====================================');
+    // constructor() {
+    //     super();
+    //     this.handleIncrement = this.handleIncrement.bind(this);
+    // }
+
+    // handleIncrement  ()  {
+    //     console.log("Increment Clicked",this);
+    // }
+    handleIncrement  = () =>  {
+        console.log("Increment Clicked",this);
     }
+
     render() {        
         return (
               <div>
